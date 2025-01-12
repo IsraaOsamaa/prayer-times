@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="./prayerTimes.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chooseCity">
+        <label for="cities">Choose a city:</label>
+        <select name="selectCountry" id="cities"></select>
+      </div>
+      <div class="above">
+        <div class="city">
+          <p id="city">Jerusalem</p>
+          <p id="currentDate">date and time</p>
+        </div>
+        <div class="next">
+          <h3>next prayer</h3>
+          <p id="nextPrayer">fajer</p>
+          <p id="remainingTime">time</p>
+        </div>
+      </div>
+      <div class="times">
+        <div class="prayer" id="Fajr">
+          <h3>Fajer</h3>
+          <img src="./images/sunrise-alt.png" />
+          <p>time</p>
+        </div>
+        <div class="prayer" id="sunrise">
+          <h3>sunrise</h3>
+          <img src="./images/sunrise-alt.png" />
+          <p>time</p>
+        </div>
+        <div class="prayer" id="dohur">
+          <h3>dohour</h3>
+          <img src="./images/brightness.png" />
+          <p>time</p>
+        </div>
+        <div class="prayer" id="asr">
+          <h3>aser</h3>
+          <img src="./images/night-day.png" />
+          <p>time</p>
+        </div>
+        <div class="prayer" id="Maghrib">
+          <h3>magrib</h3>
+          <img src="./images/sunset (1).png" />
+          <p>time</p>
+        </div>
+        <div class="prayer" id="isha">
+          <h3>esha</h3>
+          <img src="./images/moon-stars.png" />
+          <p>time</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./prayerTimes.js"></script>
+  </body>
+</html>
